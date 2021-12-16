@@ -24,6 +24,8 @@ param (
 Add-Type -AssemblyName System.IO.Compression
 Add-Type -AssemblyName System.IO.Compression.FileSystem
 
+Write-Host "Starting..."
+
 $resultFile = "$logFolder\log4j-result.txt" # Final result of script, 'Not Vulnerable' or 'Vulnerable'
 $log4jCsv = "$logFolder\log4j.csv" # List of all log4j*.jar files
 $targetManifestFile = "$logFolder\log4j-manifest.txt" # Temporary file for extracting manifest meta information from a text file
